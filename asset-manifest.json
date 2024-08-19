@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/michael/static/css/main.cd756c89.css",
+    "main.js": "/michael/static/js/main.6721688c.js",
+    "static/js/453.ed3810f9.chunk.js": "/michael/static/js/453.ed3810f9.chunk.js",
+    "static/media/Maximizing.mp4": "/michael/static/media/Maximizing.a459b0f0ca7767b89fbb.mp4",
+    "static/media/react.png": "/michael/static/media/react.6bcffb56bd0efaa47767.png",
+    "static/media/js.png": "/michael/static/media/js.e7eb54ae40636987cc95.png",
+    "static/media/pup.png": "/michael/static/media/pup.96c679fe22035407d1de.png",
+    "static/media/html.png": "/michael/static/media/html.afd7f9dad185550ca985.png",
+    "static/media/CentraNo2-Bold.ttf": "/michael/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/michael/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/git.png": "/michael/static/media/git.0983b7b8f96629e083f1.png",
+    "static/media/CentraNo2-Book.ttf": "/michael/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/sql.jpg": "/michael/static/media/sql.e997467c5b613de43687.jpg",
+    "static/media/bgbg.jpg": "/michael/static/media/bgbg.09bf2edde007de7b3748.jpg",
+    "static/media/MIKE.png": "/michael/static/media/MIKE.47df47df673d36b9d198.png",
+    "static/media/springboot.png": "/michael/static/media/springboot.94f201ce44348763e6a5.png",
+    "static/media/spcba.jpg": "/michael/static/media/spcba.6aa7cbf3b3bd396b6426.jpg",
+    "static/media/css.png": "/michael/static/media/css.0ca65abfc0c427bc3506.png",
+    "static/media/csms.jpg": "/michael/static/media/csms.4dccfc26a05448ab7810.jpg",
+    "static/media/emilogo.png": "/michael/static/media/emilogo.e3c11c773ad56b5ae43f.png",
+    "static/media/nav-icon3.svg": "/michael/static/media/nav-icon3.08b285abb8e118b52637efa5d65c5367.svg",
+    "index.html": "/michael/index.html",
+    "static/media/nav-icon1.svg": "/michael/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
+    "static/media/nav-icon2.svg": "/michael/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
+    "main.cd756c89.css.map": "/michael/static/css/main.cd756c89.css.map",
+    "main.6721688c.js.map": "/michael/static/js/main.6721688c.js.map",
+    "453.ed3810f9.chunk.js.map": "/michael/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd756c89.css",
+    "static/js/main.6721688c.js"
+  ]
+}
