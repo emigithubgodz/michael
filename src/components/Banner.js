@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row} from "react-bootstrap";
 import gradpic from '../assets/img/graduatepic.png';
+
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -70,9 +71,13 @@ export const Banner = () => {
             I am eager to apply my skills, continuously 
             learn, and contribute to a team-oriented environment.
           </p>
-
+         
+         
           </Col>
+        
+
           <Col xs={12} md={6} xl={5} className="text-center">
+         
           <div class="circle">
           <img src={gradpic} alt="Michael Balajadia" className="banner-img" />
           </div>

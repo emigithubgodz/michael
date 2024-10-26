@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import logo from "../assets/img/emilogo.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import cvFile from '../assets/files/Balajadia_CV (2).docx';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -11,16 +12,11 @@ export const NavBar = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 50) {
-        seScrolled(true);
-      } else {
-        seScrolled(false);
-      }
+      seScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("Scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const onUpdateActiveLink = (value) => {
@@ -34,84 +30,39 @@ export const NavBar = () => {
           <img src={logo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggler-icon"> </span>
+          <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link
-              href="#home"
-              className={
-                activeLink === "home" ? "active navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("home")}
-            >
-              Home
-            </Nav.Link>
-            <Nav.Link
-              href="#education"
-              className={
-                activeLink === "education" ? "active navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("education")}
-            >
-              Education
-            </Nav.Link>
-            <Nav.Link
-              href="#projects"
-              className={
-                activeLink === "projects" ? "active navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("projects")}
-            >
-             Projects
-            </Nav.Link>
-            <Nav.Link
-              href="#skills"
-              className={
-                activeLink === "skills" ? "active navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("skills")}
-            >
-              Skills
-            </Nav.Link>
-         
-            <Nav.Link
-              href="#contact"
-              className={
-                activeLink === "contact" ? "active navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("contact")}
-            >
-              Contact Me
-            </Nav.Link>
+            {["home", "education", "projects", "skills", "contact"].map((link) => (
+              <Nav.Link
+                key={link}
+                href={`#${link}`}
+                className={activeLink === link ? "active navbar-link" : "navbar-link"}
+                onClick={() => onUpdateActiveLink(link)}
+              >
+                {link.charAt(0).toUpperCase() + link.slice(1)}
+              </Nav.Link>
+            ))}
           </Nav>
           <span className="navbar-text">
-
-  <div className="social-icon">
-    <a 
-      href="https://www.linkedin.com/in/michael-balajadia-8417322b9/" 
-      target="_blank" 
-      rel="noopener noreferrer"
-    >
-      <img src={navIcon1} alt="LinkedIn" />
-    </a>
-    <a 
-      href="https://www.facebook.com/Porogami.18/" 
-      target="_blank" 
-      rel="noopener noreferrer"
-    >
-      <img src={navIcon2} alt="Facebook" />
-    </a>
-    <a 
-      href="https://www.instagram.com/mike.airforce1s/" 
-      target="_blank" 
-      rel="noopener noreferrer"
-    >
-      <img src={navIcon3} alt="Instagram" />
-    </a>
-  </div>
-</span>
-
+            <div className="social-icon">
+              <a href="https://www.linkedin.com/in/michael-balajadia-8417322b9/" target="_blank" rel="noopener noreferrer">
+                <img src={navIcon1} alt="LinkedIn" />
+              </a>
+              <a href="https://www.facebook.com/Porogami.18/" target="_blank" rel="noopener noreferrer">
+                <img src={navIcon2} alt="Facebook" />
+              </a>
+              <a href="https://www.instagram.com/mike.airforce1s/" target="_blank" rel="noopener noreferrer">
+                <img src={navIcon3} alt="Instagram" />
+              </a>
+            </div>
+          </span>
+          <div className="navbar-text"> {/* Use margin start for spacing */}
+            <a href={cvFile} download>
+              <Button variant="primary">Download CV</Button>
+            </a>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
