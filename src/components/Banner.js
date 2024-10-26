@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
-import { Col, Container, Row, Button} from "react-bootstrap";
+import { Col, Container, Row} from "react-bootstrap";
 import gradpic from '../assets/img/graduatepic.png';
 import cvFile from '../assets/files/Balajadia_CV (2).docx';
 
