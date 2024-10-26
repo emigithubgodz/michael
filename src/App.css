@@ -16,6 +16,11 @@
   font-weight: 400;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -58,6 +63,7 @@ p.success {
 p.danger {
   color: red;
 }
+
 
 nav.navbar {
   padding: 18px 0;
@@ -119,38 +125,8 @@ span.navbar-text {
   transform: scale(1);
 }
 
-.navbar-text {
-  display: flex; /* Ensure this is a flex container */
-  align-items: center;
-  
-}
-
-.navbar-text button {
-  font-weight: 700;
-  color: #ffffff; /* Change text color to white */
-  background-color: #808080; /* Set background color to gray */
-  
-  padding:  5px; /* Add horizontal padding for spacing */
-  font-size: 18px;
-  margin-left: 0; /* Remove left margin to avoid spacing issues */
-  transition: 0.3s ease-in-out;
-  line-height: 1.5;
-  display: flex;
-  align-items: center; /* Ensures vertical alignment */
-  justify-content: center; /* Centers the text horizontally */
-  width: 100%; /* Set button width to full */
-  border-radius: 4px; /* Optional: Add rounded corners */
-}
-
-.navbar-text button:hover {
-  background-color: #696969; 
-}
 
 
-.navbar-text {
-  display: flex;
-  align-items: center;
-}
 
 
 
@@ -223,6 +199,18 @@ span.navbar-text {
   width: 100%; /* Makes the image fit the circle */
   height: auto; /* Maintains aspect ratio */
   display: block; /* Removes any bottom space */
+}
+
+.custom-button {
+  width: 100%;
+  padding: 10px 10px;
+  background-color: gray; /* Gray background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  cursor: pointer; /* Change cursor to pointer */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Ensure no underline */
+  border-radius: 10%;
 }
 
 

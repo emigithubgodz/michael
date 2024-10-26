@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { Navbar, Container, Nav, Button } from "react-bootstrap";
+import { Navbar, Container, Nav} from "react-bootstrap";
 import logo from "../assets/img/emilogo.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
-import cvFile from '../assets/files/Balajadia_CV (2).docx';
+
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -58,11 +58,8 @@ export const NavBar = () => {
               </a>
             </div>
           </span>
-          <div className="navbar-text"> {/* Use margin start for spacing */}
-            <a href={cvFile} download>
-              <Button variant="primary">Download CV</Button>
-            </a>
-          </div>
+      
+
         </Navbar.Collapse>
       </Container>
     </Navbar>

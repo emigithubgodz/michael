@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
-import { Col, Container, Row} from "react-bootstrap";
+import { Col, Container, Row, Button} from "react-bootstrap";
 import gradpic from '../assets/img/graduatepic.png';
+import cvFile from '../assets/files/Balajadia_CV (2).docx';
 
 
 export const Banner = () => {
@@ -72,7 +73,12 @@ export const Banner = () => {
             learn, and contribute to a team-oriented environment.
           </p>
          
-         
+          <div>
+          <a href={cvFile} download className="custom-button">
+           Download CV
+          </a>
+        </div>
+
           </Col>
         
 
