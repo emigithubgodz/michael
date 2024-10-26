@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import migradeVid from '../assets/videos/migrade.mp4';
 import skinfullyYoursVid from '../assets/videos/Skinfully Yours.mp4';
