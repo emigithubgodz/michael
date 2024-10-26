@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import gradpic from '../assets/img/graduatepic.png';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -64,11 +65,17 @@ export const Banner = () => {
             </h1>
             <p>Welcome to my portfolio website.</p>
             <p className="about-me">
-              I'm <span className="highlight">Michael Balajadia</span>, an aspiring candidate for roles in web designing, web development, or digital marketing. 
-              I offer a strong foundation in organization and dependability. I am adept at managing multiple 
-              priorities with a positive attitude and am eager to take on additional responsibilities to contribute 
-              to the team's success.
-            </p>
+            I am <span className="highlight">Michael Balajadia</span>, a graduate of Cum Laude under Bachelor of Science 
+            in Information Technology with a strong foundation in organization and a reliable, detail-oriented approach to work.
+            I am eager to apply my skills, continuously 
+            learn, and contribute to a team-oriented environment.
+          </p>
+
+          </Col>
+          <Col xs={12} md={6} xl={5} className="text-center">
+          <div class="circle">
+          <img src={gradpic} alt="Michael Balajadia" className="banner-img" />
+          </div>
           </Col>
         </Row>
       </Container>

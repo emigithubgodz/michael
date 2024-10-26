@@ -2,10 +2,14 @@ import { Container, Col, Row } from "react-bootstrap";
 import htmlLogo from "../assets/img/html.png";
 import cssLogo from "../assets/img/css.png";
 import jsLogo from "../assets/img/js.png";
-import reactLogo from "../assets/img/react.png";
-import nodejsLogo from "../assets/img/springboot.png";
+import reactLogo from "../assets/img/react (2).png";
+import phpLogo from "../assets/img/php.png";
+import pythonLogo from "../assets/img/python.png";
+import djangoLogo from '../assets/img/django-icon.svg';
 import gitLogo from "../assets/img/git.png";
-import sqlLogo from "../assets/img/sql.jpg";
+import sqlLogo from "../assets/img/sql.png";
+
+
 
 export const Skills = () => {
   const skills = [
@@ -13,9 +17,12 @@ export const Skills = () => {
     { logo: cssLogo, name: "CSS" },
     { logo: jsLogo, name: "JavaScript" },
     { logo: reactLogo, name: "React" },
-    { logo: nodejsLogo, name: "Springboot" },
+    { logo: phpLogo, name: "Php" },
+    { logo: pythonLogo, name: "Python" },
+    { logo: djangoLogo, name: "Django" },
     { logo: gitLogo, name: "Git" },
     { logo: sqlLogo, name: "SQL" },
+  
   ];
 
   return (
